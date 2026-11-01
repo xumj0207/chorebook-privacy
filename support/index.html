@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>使用帮助与支持 · 家务簿</title>
+<style>
+  :root {
+    --bg: #FDF6EC;
+    --card: #FFFFFF;
+    --text: #2C2A26;
+    --text-2: #6B665C;
+    --text-3: #9A9386;
+    --line: #EDE4D3;
+    --accent: #C8891F;
+    --accent-soft: #FBF0DA;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #17161A;
+      --card: #232228;
+      --text: #F2EFE8;
+      --text-2: #B4AFA4;
+      --text-3: #837E73;
+      --line: #35333C;
+      --accent: #E5AB4A;
+      --accent-soft: #332B1E;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0 16px 64px;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", "Microsoft YaHei", sans-serif;
+    font-size: 16px;
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  header {
+    padding: 48px 0 24px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 32px;
+  }
+  h1 { font-size: 28px; font-weight: 700; margin: 0 0 8px; letter-spacing: -0.4px; }
+  .meta { color: var(--text-3); font-size: 14px; }
+  h2 { font-size: 19px; font-weight: 650; margin: 40px 0 12px; letter-spacing: -0.2px; }
+  p { margin: 0 0 14px; color: var(--text-2); }
+  strong { color: var(--text); font-weight: 600; }
+  ul { margin: 0 0 16px; padding-left: 22px; color: var(--text-2); }
+  li { margin-bottom: 8px; }
+  .highlight {
+    background: var(--accent-soft);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 12px 12px 0;
+    padding: 16px 18px;
+    margin: 20px 0 24px;
+  }
+  .highlight p { margin: 0; color: var(--text); }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 18px 20px;
+    margin: 16px 0;
+  }
+  .card ul { margin: 0; }
+  .card li:last-child { margin-bottom: 0; }
+  details {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 14px 18px;
+    margin: 10px 0;
+  }
+  summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--text);
+    list-style: none;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: "＋"; float: right; color: var(--accent); font-weight: 600; }
+  details[open] summary::after { content: "－"; }
+  details p { margin: 12px 0 0; }
+  details ul { margin: 12px 0 0; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  footer {
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    color: var(--text-3);
+    font-size: 14px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>使用帮助与支持</h1>
+    <div class="meta">家务簿（ChoreBook） · 最后更新：2026 年 10 月 31 日</div>
+  </header>
+
+  <div class="highlight">
+    <p><strong>家务簿是一款纯本地的家务记账 App。</strong>孩子档案、打卡记录、积分与照片都只保存在你自己的设备上，没有服务器，也不需要注册账号。</p>
+  </div>
+
+  <h2>联系我们</h2>
+  <div class="card">
+    <ul>
+      <li><strong>电子邮箱</strong>：<a href="mailto:xmj0207@126.com">xmj0207@126.com</a>（推荐）</li>
+      <li><strong>App 内反馈</strong>：「我的 → 关于与帮助 → 意见反馈」，可直接唤起邮件并预填内容</li>
+      <li><strong>开发者</strong>：MINGJIAN XU</li>
+      <li><strong>响应时间</strong>：通常 7 个工作日内回复；涉及本机数据的问题，我们会提供逐步操作指引</li>
+    </ul>
+  </div>
+  <p>反馈时如果能说明「当时的操作步骤 + 期望看到的结果 + 实际看到的结果」，我们更容易复现和修复。</p>
+
+  <h2>常见问题</h2>
+
+  <details open>
+    <summary>数据会上传到服务器吗？</summary>
+    <p>不会。家务簿没有服务器，所有数据保存在你本机。家庭组的多设备同步也是在同一 Wi‑Fi 局域网内点对点传输，不经过任何云端。</p>
+  </details>
+
+  <details>
+    <summary>换手机 / 重装 App 后，数据还能找回吗？</summary>
+    <p>因为数据只在本机且不设账号，我们没有服务端备份，无法替你恢复数据。请通过以下方式自行保护：</p>
+    <ul>
+      <li>换机时使用 iPhone「快速开始」整机迁移，或 iTunes / Finder 加密整机备份，App 数据会随之迁移；</li>
+      <li>重要照片请在 App 内点「保存到相册」额外留一份；</li>
+      <li>卸载 App 会彻底清除本机全部账本数据，卸载前请先确认已备份。</li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>专业版怎么购买和恢复？</summary>
+    <p>专业版为一次性买断型 App 内购，由 Apple App Store 完成支付。换设备或重装后，在「我的 → 恢复购买」，用购买时的同一个 Apple ID 即可免费恢复权益，无需再次付费。</p>
+  </details>
+
+  <details>
+    <summary>两台设备怎么同步（家庭组）？</summary>
+    <ul>
+      <li>两台设备连接到<strong>同一个 Wi‑Fi</strong> 网络；</li>
+      <li>首次使用时允许「本地网络」权限（系统设置 → 隐私与安全性 → 本地网络）；</li>
+      <li>在其中一台「家庭组」生成配对码，另一台输入即可配对；</li>
+      <li>同步需在 App 处于前台时进行，两端数据按最新记录合并。</li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>生日 / 打卡提醒没有弹出？</summary>
+    <p>提醒是本机的系统本地通知。请在「系统设置 → 通知 → 家务簿」中允许通知，并在 App 的提醒设置里确认时间；请确保没有开启专注模式或静音时段过滤。</p>
+  </details>
+
+  <details>
+    <summary>任务显示「今日不做」是什么意思？</summary>
+    <p>说明该任务按重复规则（例如只在周一、周四）今天不安排，不是已完成。到它的执行日会自动恢复为可打卡。</p>
+  </details>
+
+  <details>
+    <summary>怎么彻底删除孩子档案或全部数据？</summary>
+    <ul>
+      <li>单个孩子：进入孩子的档案页 →「删除孩子档案」，该孩子名下全部记录、照片与视频会一并清除，且无法恢复；</li>
+      <li>全部数据：卸载家务簿即清除该 App 的所有本地数据。</li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>App 面向多大年龄？</summary>
+    <p>本 App 面向家长，用于记录和管理孩子的家务完成情况。App 不含广告、不含第三方追踪、不含社交互动功能。孩子的昵称、头像与生日由家长自行录入。</p>
+  </details>
+
+  <h2>相关链接</h2>
+  <div class="card">
+    <ul>
+      <li><a href="https://xumj0207.github.io/chorebook-privacy/">隐私政策（完整条款）</a></li>
+      <li><a href="mailto:xmj0207@126.com">发送邮件给开发者</a></li>
+      <li><a href="https://www.apple.com/legal/internet-services/itunes/" target="_blank" rel="noopener">Apple 媒体服务条款与条件</a></li>
+    </ul>
+  </div>
+
+  <footer>
+    <p>© 2026 家务簿 ChoreBook</p>
+  </footer>
+
+</div>
+</body>
+</html>
